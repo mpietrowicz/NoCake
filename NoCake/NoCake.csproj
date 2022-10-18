@@ -7,4 +7,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="StrongInject" Version="1.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NoCake.Core.Abstract\NoCake.Core.Abstract.csproj" />
+    <ProjectReference Include="..\NoCake.Core\NoCake.Core.csproj" />
+  </ItemGroup>
+
 </Project>
