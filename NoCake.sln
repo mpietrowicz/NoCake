@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoCake.Core", "NoCake.Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoCake.Core.Abstract", "NoCake.Core.Abstract\NoCake.Core.Abstract.csproj", "{D7CDA332-AAA0-40A4-90FF-525E191026F4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TasksProjects", "TasksProjects", "{07BCA401-A90E-467F-9527-7F49FBA3146F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASK.desk.builder", "NASK.desk.builder\NASK.desk.builder.csproj", "{ED32B793-83B0-4559-9DD5-DD510FEF8D57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoCake.Tests", "NoCake.Tests\NoCake.Tests.csproj", "{055399B7-D270-42AA-9395-5C090B296A6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +36,16 @@ Global
 		{D7CDA332-AAA0-40A4-90FF-525E191026F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7CDA332-AAA0-40A4-90FF-525E191026F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7CDA332-AAA0-40A4-90FF-525E191026F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED32B793-83B0-4559-9DD5-DD510FEF8D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED32B793-83B0-4559-9DD5-DD510FEF8D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED32B793-83B0-4559-9DD5-DD510FEF8D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED32B793-83B0-4559-9DD5-DD510FEF8D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055399B7-D270-42AA-9395-5C090B296A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055399B7-D270-42AA-9395-5C090B296A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055399B7-D270-42AA-9395-5C090B296A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055399B7-D270-42AA-9395-5C090B296A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED32B793-83B0-4559-9DD5-DD510FEF8D57} = {07BCA401-A90E-467F-9527-7F49FBA3146F}
 	EndGlobalSection
 EndGlobal

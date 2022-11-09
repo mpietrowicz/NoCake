@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 
-namespace NoCake.Core.Abstract
+namespace NoCake.Core.Abstract;
+
+public interface IParameterProvider
 {
-    public interface IParameterProvider
-    {
-        void Init(params string[] arguments);
-        List<KeyValuePair<string, string>> GetParameters();
-    }
+    void Init(params string[] arguments);
+    string[] GetParameters();
 }

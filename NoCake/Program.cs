@@ -1,7 +1,4 @@
-﻿using System.ComponentModel;
-using NoCake;
-using NoCake.Core;
-using NoCake.Core.Abstract;
+﻿using NoCake.Core;
 
-using var ownedOfA = new NoCakeContainer().Resolve<IApp>();
-await ownedOfA.Value.Run(args);
+var ownedOfA = new NoCakeContainer().Resolve();
+await ownedOfA.Run(args)!;

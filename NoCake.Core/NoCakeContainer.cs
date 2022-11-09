@@ -1,9 +1,24 @@
 ﻿using NoCake.Core.Abstract;
 using NoCake.Core.Providers;
-using StrongInject;
+using Splat;
 
 namespace NoCake.Core;
 
-[Register(typeof(ParameterProvider), Scope.SingleInstance, typeof(IParameterProvider))]
-[Register(typeof(App),typeof(IApp))]
-public partial class NoCakeContainer : IContainer<IApp> {}
+public partial class NoCakeContainer
+{
+    public NoCakeContainer()
+    {
+        
+        Locator.CurrentMutable.RegisterConstant(new ParameterProvider(), typeof(IParameterProvider));
+        Locator.CurrentMutable.RegisterConstant(new PathProvider(), typeof(IPathProvider));
+        Locator.CurrentMutable.RegisterConstant(new App(), typeof(IApp));
+        Locator.CurrentMutable.RegisterConstant(new GitWrapper(), typeof(IGitWrapper));
+        
+        
+    }
+
+    public IApp? Resolve()
+    {
+       return Locator.Current.GetService<IApp>();
+    }
+}
